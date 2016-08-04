@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+
+      <servlet>
+          <servlet-name>myServlet</servlet-name>
+          <servlet-class>com.lyashuk.MyServlet</servlet-class>
+      </servlet>
+
+      <servlet-mapping>
+          <servlet-name>myServlet</servlet-name>
+          <url-pattern>/main</url-pattern>
+      </servlet-mapping>
+
+
+    <servlet>
+    <servlet-name>homePage</servlet-name>
+    <servlet-class>com.lyashuk.HomePage</servlet-class>
+</servlet>
+
+    <servlet-mapping>
+        <servlet-name>homePage</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>productPage</servlet-name>
+        <servlet-class>com.lyashuk.ProductPage</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>productPage</servlet-name>
+        <url-pattern>/products</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>registration</servlet-name>
+        <servlet-class>com.lyashuk.Registration</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>admin</servlet-name>
+        <servlet-class>com.lyashuk.Admin</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>buy</servlet-name>
+        <servlet-class>com.lyashuk.BuyServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>buy</servlet-name>
+        <url-pattern>/buy</url-pattern>
+    </servlet-mapping>
+
+    <listener>
+        <listener-class>com.lyashuk.Listener</listener-class>
+    </listener>
+
+
+
+</web-app>

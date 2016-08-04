@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - luckysales@localhost" uuid="63330b3a-86fa-4d00-9b63-1e17ffe1ad23">
+    <database-info product="MySQL" version="5.7.11-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="luckysales"/>
+    <table name="product" schema="" catalog="luckysales" type="TABLE">
+      <column name="idProduct" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nameProduct" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="descriptionProduct" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="countProduct" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="priceProduct" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="idProduct"/>
+      <index name="idproduct_UNIQUE" unique="true" columns="idProduct"/>
+    </table>
+    <table name="user" schema="" catalog="luckysales" type="TABLE">
+      <column name="idUser" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="firstNameUser" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ageUser" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="loginUser" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="passwordUser" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="idUser"/>
+      <index name="idUser_UNIQUE" unique="true" columns="idUser"/>
+    </table>
+  </data-source>
+</component>
